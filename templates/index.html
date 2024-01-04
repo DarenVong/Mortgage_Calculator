@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href:"static/style.css" rel:"stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+</head>
+<body>
+<center>
+  <img src="static/bank icon.png"></img> <h1>Mortgage Calculator!</h1>
+    <!-- <img src="static/bank icon.png"></img> -->
+<!-- change id and name to nickek to get inpit-->
+<!-- The action attribute determines where the information is sent. -->
+<!-- The method attribute is assigned a HTTP verb that is included in the HTTP request. -->
+    <form method="post" action="/">
+        <label for="mortgage_input">Enter Mortgage amount:</label>
+        <input type="number" id="mortgage" name="mortgage" step="1000" required>
+        <br>
+        <br>
+        <label for="Interest_rate">Enter Interest rate:</label>
+        <input type="number" class="interest_rate" id="interest_rate" name="interest_rate" step="1" required>
+        <br>
+        <br>
+        <label for="loan_term">Enter Loan term:</label>
+        <input type="number" id="loan_term" name="loan_term" step="10" min="10" max="30" required>
+        <br>
+        <br>
+      <footer>
+        </center>
+        <center>
+          <button type="submit">Submit</button>
+        
+    </form>
+          <p>monthly payment = ${{ monthly_payments }}</p>
+        </center>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,2 @@
+.venv/
+# tells git to ignore the virtual enviroment
