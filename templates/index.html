@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href:"static/style.css" rel:"stylesheet">
+    <link rel="stylesheet" href="static/style.css" >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mortgage Calculator</title>
+    <!-- <title>Mortgage Calculator</title> -->
 </head>
-<body>
-<center>
-  <img src="static/bank icon.png"></img> <h1>Mortgage Calculator!</h1>
-    <!-- <img src="static/bank icon.png"></img> -->
+    <h1 class="border"></h1> 
+    <body class="background" id="background">
+    <div>
+      <!-- <h1 class="border"></h1>  -->
+        <img class="centerid" src="static/bank icon.png" width="50" id="image"></img> 
+      <h1 class="title" id="title">Mortgage Calculator!</h1>
+    </div>
+  </header>
 <!-- change id and name to nickek to get inpit-->
 <!-- The action attribute determines where the information is sent. -->
 <!-- The method attribute is assigned a HTTP verb that is included in the HTTP request. -->
+<!-- this line of code is for users to input their calculations on the webiste -->
+
     <form method="post" action="/">
-        <label for="mortgage_input">Enter Mortgage amount:</label>
-        <input type="number" id="mortgage" name="mortgage" step="1000" required>
+        <label for="mortgage_input" class="centerid" id="mortgage-label" >Enter Mortgage amount:</label>
+          <input type="number" class="centerid"  id="mortgage" name="mortgage" step="1000" required>
         <br>
+          <label class="centerid" for="Interest_rate">Enter Interest rate:</label>
+           <input type="number" class="centerid" id="interest_rate" name="interest_rate" step="1" required>
         <br>
-        <label for="Interest_rate">Enter Interest rate:</label>
-        <input type="number" class="interest_rate" id="interest_rate" name="interest_rate" step="1" required>
+          <label class="centerid" for="loan_term">Enter Loan term:</label>
+            <input type="number" class="centerid" name="loan_term" step="10" min="10" max="30" required>
         <br>
-        <br>
-        <label for="loan_term">Enter Loan term:</label>
-        <input type="number" id="loan_term" name="loan_term" step="10" min="10" max="30" required>
-        <br>
-        <br>
-      <footer>
-        </center>
-        <center>
-          <button type="submit">Submit</button>
-        
-    </form>
-          <p>monthly payment = ${{ monthly_payments }}</p>
-        </center>
-      </footer>
+    <footer>
+      <button class="centerid" type="submit">Submit</button>        
+        </form>
+          <p class="centerid">monthly payment = ${{ monthly_payments }}</p>
+           <h1 class="border"></h1> 
+    </footer>
 </body>
 </html>

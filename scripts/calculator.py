@@ -8,6 +8,7 @@ class Calculator:
         
 
     def calculate_monthly_payments(self):
+        #calculates payment based on mortgage and interest rates...
         monthly_interest_rate = self.interest_rate / 100 / 12
         loan_term = self.loan_term * 12
         numerator = monthly_interest_rate * (1 + monthly_interest_rate)**loan_term 

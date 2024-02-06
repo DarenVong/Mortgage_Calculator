@@ -1,3 +1,48 @@
-.interest_rate {
-    color: pink;
+.background {
+    background-color: white;
 }
+
+/* .border {
+    border-top: 10px static black;
+    border-bottom: 10px static black;
+} */
+
+.centerid {
+    text-align: center;
+    display: block;
+    margin-top: auto;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+#mortgage {
+    text-align: center;   
+}
+
+#loan {
+    text-align: center;
+}
+
+.border{
+    background-color: black;
+    position: static;
+    width: 17in;
+    height: 1in; 
+    }
+
+.title{
+
+} */
+
+.image{
+    height: 50px;
+    width:  50px;
+}
+
